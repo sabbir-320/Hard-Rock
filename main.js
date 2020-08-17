@@ -5,7 +5,7 @@ const songHolder = document.getElementById("song-holder");
 
 let previousSongs = "";
 
-// Functionality after pressing a search key word
+// Functionality after hitting search key
 searchBtn.addEventListener("click", (event) => {
     event.preventDefault();
     previousSongs = "";
@@ -14,7 +14,7 @@ searchBtn.addEventListener("click", (event) => {
     }
 });
 
-// Show or Hide the lyrics after clicking the Get lyrics button
+// Functionality after clicking the Get lyrics button
 songHolder.addEventListener("click", async (e) => {
     let getSongId = e.target.getAttribute("song-id");
     if (previousSongs) {
